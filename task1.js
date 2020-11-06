@@ -1,10 +1,19 @@
+const user = {
+    name: 'Mango',
+    age: 20,
+    hobby: 'html',
+    premium: true,
+  }
+  
+  user.mood  = "Happy";
+  user.hobby = "skydiving";
+  user.premium = false;
 
-const logItems = function (array) {
- for(let i = 0;i<array.length;i+=1){
-   console.log(`${i + 1} - ${array[i]}`)
- }
-};
+  const keys = Object.keys(user);
+  const values = Object.values(user); 
 
-logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
+  for (let key of keys) {
+    console.log(`${key}: ${user[key]}`);
+}
 
-logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+
